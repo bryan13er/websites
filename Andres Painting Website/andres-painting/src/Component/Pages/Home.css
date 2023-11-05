@@ -1,0 +1,29 @@
+div .containerStyle {
+    background-image: url(../../images/stock_roller.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+
+div .rollerText {
+    position: "absolute",
+}
+  
+@media (max-width: 768px) {
+div .containerStyle {
+    background-size: auto 100%; 
+}
+}
+
+@media (min-width: 769px) {
+div .containerStyle {
+    background-size: cover; 
+}
+}
