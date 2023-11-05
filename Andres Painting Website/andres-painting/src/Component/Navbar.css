@@ -21,6 +21,16 @@ nav .title {
     font-family: "URW Chancery L", cursive, sans-serif;
 }
 
+nav .mobileInsta {
+    width: 1.5rem; 
+    height: 1.5rem; 
+}
+
+nav ul li a .instagram-icon {
+    width: 1.5rem; 
+    height: 1.5rem; 
+}
+
 nav ul {
     display: flex;
 }
@@ -42,6 +52,13 @@ nav ul li a:not(.active):hover {
     background-color:#172554 ;
 }
 
+nav .mobile {
+    display: none;
+    position: absolute;
+    top: 1.4rem;
+    right: 3.5rem;
+}
+
 nav .menu {
     display: none;
     position: absolute;
@@ -53,6 +70,7 @@ nav .menu {
     height: 2rem;
 }
 
+
 nav .menu span {
     height: 0.4rem;
     width: 100%;
@@ -63,6 +81,10 @@ nav .menu span {
 
 @media (max-width: 480px) {
     nav .menu {
+        display: flex;
+    }
+
+    nav .mobile {
         display: flex;
     }
 

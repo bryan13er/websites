@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {NavLink, Link} from "react-router-dom";
+import insta from "../images/instrgram_logo.png";
 
 import "./Navbar.css"
 
@@ -14,6 +15,21 @@ const Navbar = () => {
     return (
         <nav>
             <Link to='/' className="title">Valdivia Painting</Link>
+            <div
+                className='mobile'
+            >
+                <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src={insta}
+                        alt="Instagram"
+                        className="mobileInsta"
+                    />
+                </a>
+            </div>
             <div 
                 className="menu"
                 onClick={() => {
@@ -25,6 +41,21 @@ const Navbar = () => {
                 <span></span>
             </div>
             <ul className={menuOpen ? "open" : ""}>
+                {!menuOpen && (
+                    <li>
+                        <a
+                            href="https://www.instagram.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={insta}
+                                alt="Instagram"
+                                className="instagram-icon"
+                            />
+                        </a>
+                    </li>
+                )}
                 <li>
                     <NavLink 
                         exact="true" 
