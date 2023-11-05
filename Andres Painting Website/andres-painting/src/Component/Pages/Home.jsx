@@ -4,7 +4,8 @@ import "./Home.css"
 const Home = () => {
   return (
     <div className="containerStyle">
-      <div className="rollerText">DID THIS WORK</div>
+      <h1 className="rollerText">Call US</h1>
+      <p> 831 521 2987</p>
     </div>
   );
 }
