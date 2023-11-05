@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {NavLink, Link} from "react-router-dom";
-import insta from "../images/instrgram_logo.png";
+import insta from "../images/pngwing.com.png";
 
 import "./Navbar.css"
 
