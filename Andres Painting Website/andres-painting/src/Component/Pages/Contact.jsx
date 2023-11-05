@@ -1,7 +1,6 @@
 import React from "react";
 
-class Contact extends React.Component {
-  render() {
+const Contact = () => {
     return (
       <div>
         <p>Contact Us</p>
@@ -9,7 +8,6 @@ class Contact extends React.Component {
         <p>email </p>
       </div>
     );
-  }
 }
 
 export default Contact;

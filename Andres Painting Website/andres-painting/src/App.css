@@ -1,38 +1,5 @@
-body {
-  background-color: whitesmoke;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: sans-serif;
-}
-
-.title {
-  text-align: center;
-  color: gray;
-  font-family: "URW Chancery L", cursive, sans-serif;
-  font-size: 50px;
-}
-
-ul.navigation {
-  background-color: black;
-  padding: 0;
-  user-select: none; 
-  text-align: center;
-}
-
-ul.navigation li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-}
-
-ul.navigation li a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
-}
-
-.active {
-  background-color: royalblue;
+.App {
+    background-color: #fefefe;
+    height: 100%vh;
+    width: 100%;
 }

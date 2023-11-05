@@ -1,24 +1,19 @@
 import './App.css';
 import React from "react";
-import {Route, NavLink, HashRouter, Routes} from "react-router-dom";
+import {Route, HashRouter, Routes} from "react-router-dom";
 
-import Home from "./Component/Home";
-import About from './Component/About';
-import Services from './Component/Services';
-import PastProjects from './Component/PastProjects';
-import Contact from './Component/Contact';
+import Navbar from './Component/Navbar';
+import Home from "./Component/Pages/Home";
+import About from './Component/Pages/About';
+import Services from './Component/Pages/Services';
+// import PastProjects from './Component/Pages/PastProjects';
+// import Contact from './Component/Pages/Contact';
 
 
-class App extends React.Component {
-  render() {
+function App() {
     return(
       <HashRouter>
-        <h1 className="title">Valdivia Painting</h1>
-        <ul className="navigation">
-          <li><NavLink exact="true" to="/">Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/services">Services</NavLink></li>
-        </ul>
+        <Navbar />
         <div>
           <Routes>
             <Route exact="true" path="/" element={<Home/>}/>
@@ -28,7 +23,6 @@ class App extends React.Component {
         </div>
       </HashRouter>
     );
-  }
 }
 
 export default App;
