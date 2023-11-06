@@ -1,11 +1,11 @@
 div .containerStyle {
-    --bg-image: url(../../images/adobe_roller.png);
+    --bg-image: url(../../images/roller_high_res.jpeg);
     --bg-image-opacity: 1.0;
 
     display: grid;
     place-content: center;
     text-align: center;
-    min-height: 400px;
+    min-height: 450px;
 
     position: relative;
     isolation: isolate;
@@ -46,6 +46,7 @@ div .number{
     text-align: left;
     padding-top: 25px;
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   h1 {
