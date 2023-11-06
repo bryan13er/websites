@@ -41,12 +41,57 @@ h1 {
     font-size: 1.35rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
-    max-width: 600px; /* Set the maximum width for the text */
-    margin-left: auto; /* Center the text horizontally */
-    margin-right: auto; /* Center the text horizontally */
+    max-width: 600px; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
-/* In your Home.css file */
 .spacer {
   height: 30px; /* Adjust the height to control the spacing */
 }
+
+
+.flexContainer {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Add space between items */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    padding: 0 10px;
+    padding-bottom: 10px; 
+}
+
+  
+  .mainBlurb {
+    flex: 2; /* Takes up 2/3 of the available width */
+    font-size: 1.9rem;
+    color: gray;
+    font-family: 'Outfit', 'Times New Roman', Times, serif;
+    max-width: 66%; /* To limit text width */
+  }
+  
+  .flexImage {
+    max-height: 250px; /* Set the maximum height for the image */
+    flex: 1; /* Takes up 1/3 of the available width */
+    max-width: 33%; /* Limit the image width */
+
+  }
+
+  @media (max-width: 480px) {
+    .flexContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flexImage {
+        padding-top: 15px;
+        max-width: 100%; /* To fill the width when in a column layout */
+        align-items: center; /* Vertically center the image within the container */
+        justify-content: center; /* Horizontally center the image within the container */
+      }
+    
+      .mainBlurb {
+        max-width: 100%; /* To fill the width when in a column layout */
+      }
+  }
+
