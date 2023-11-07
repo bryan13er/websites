@@ -15,7 +15,6 @@ const Home = () => {
         <h1 className="rollerText">Monterey, CA</h1>
         <p className="number"> (831) 521-2987</p>
       </div>
-      <div className="spacer"/>
       <div className="flexContainer">
         <div className="words">
           <h1> Expert Professional Located in Monterey </h1>
@@ -30,6 +29,15 @@ const Home = () => {
             className="flexImage"
           />
         </div>
+      </div>
+      <div className="bottomImage">
+        <div className="item">Contact: <br/><span className="small-line"/> sample@gmail.com (123) 456 7890</div>
+        <img
+            src={paint_logo}
+            alt="paint"
+            className="logo"
+        />
+        <div className="item2">Hours Of Operation: <br/><span className="small-line"/> Monday-Saturday 9am-5pm</div>
       </div>
     </>
   );
