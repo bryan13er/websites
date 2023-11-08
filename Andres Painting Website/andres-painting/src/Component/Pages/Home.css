@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url(../../../fonts/Outfit-Light.ttf) format('truetype'); /* Specify the correct path to the font file */
+  /* You can add more font formats (e.g., WOFF, WOFF2) for cross-browser support */
+}
+
+body{
+  font-family: 'Outfit';
+}
+
 div .containerStyle {
     --bg-image: url(../../images/roller_high_res.jpeg);
     --bg-image-opacity: 1.0;
@@ -48,6 +58,18 @@ div .bottomImage::after {
   background-position: center;
 }
 
+.LocationText {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: 'Outfit';
+}
+
+.Location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .small-line {
   line-height: 2; /* Adjust the value as needed to reduce spacing */
 }
@@ -57,7 +79,7 @@ div .bottomImage::after {
   text-align: left;
   font-size: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family:'Outfit'
 }
 
 .item2 {
@@ -66,13 +88,12 @@ div .bottomImage::after {
   font-size: 1.5rem;
   padding-right: 5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family:'Outfit'
 
 }
 
 div .rollerText{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Outfit';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: white;
 }
@@ -102,11 +123,12 @@ div .number{
     margin-right: auto; /* Center the text horizontally */  
     max-width: 900px; /* Set the maximum width for the text */
     text-align: left;
+    font-family: 'Outfit';
   }
 
   .mainBlurb {
     padding-top: 10px;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Outfit';
     font-size: 1.35rem;
     padding-left: 30px;
   }
@@ -123,6 +145,7 @@ div .number{
   .flexImage {
     max-height: 350px;
     max-width: 100%; /* Ensure the image fits within the container */
+    padding-bottom: 10px;
   }
   
   @media (max-width: 480px) {
@@ -186,5 +209,21 @@ div .number{
     .item2{
       text-align: center;
       width: 250px;
+    }
+  }
+
+/* media querey for location */
+  @media (max-width: 580px) {
+    .Location {
+      flex-direction: column;
+    }
+  
+    .LocationText {
+      text-align: center;
+    }
+  
+    iframe {
+      width: 100%; /* Make the iframe take the full width */
+      height: 300px; /* Automatically adjust the height to maintain aspect ratio */
     }
   }
