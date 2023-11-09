@@ -2,8 +2,47 @@ import React from "react";
 import "./Home.css";
 import paint_brushes from "../../images/painters_group.png";
 import paint_logo from "../../images/temp_logo.png"
+import FormatPaintIcon from '@mui/icons-material/FormatPaint';
+import HouseIcon from '@mui/icons-material/House';
+import BrushIcon from '@mui/icons-material/Brush';
+
+const services_row = {
+  1: {
+    icon: FormatPaintIcon,
+    title: 'Interior Painting',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sit non voluptas mollitia quidem a dolores autem exercitationem esse placeat?'
+  },
+  2 : {
+    icon: HouseIcon,
+    title: 'Exterior Painting',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sit non voluptas mollitia quidem a dolores autem exercitationem esse placeat?'
+  },
+  3: {
+    icon: BrushIcon,
+    title: 'Detailed Finish',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sit non voluptas mollitia quidem a dolores autem exercitationem esse placeat?'
+
+  }
+};
 
 const Home = () => {
+  const containers = [];
+
+  for (let key in services_row) {
+    const item = services_row[key];
+    containers.push(
+      <div key={key} className="container">
+        <div className="large-icon-container">
+          <item.icon style={{ fontSize: '70px' }} className='icon'/>
+        </div>
+        <div className="container__text">
+          <h2>{item.title}</h2>
+          <p><br/>{item.text}</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="containerStyle">
@@ -30,6 +69,13 @@ const Home = () => {
           />
         </div>
       </div>
+      <h1 className="test">Services Offered</h1>
+      <div className="container-wrapper">
+        {containers}
+      </div>
+      <div className="container-wrapper">
+        {containers}
+      </div>
       <div className="Location">
         {/* <h1 className="LocationText">Serving<br/>The Monterey Bay Area</h1> */}
         <iframe
@@ -42,7 +88,7 @@ const Home = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
-        <h1 className="LocationText">Serving the Pacific Grove for 15 Years</h1>
+        <h1 className="LocationText">Serving the Pacific Grove for 20 Years</h1>
       </div>
       <div className="bottomImage">
         <div className="item">Contact: <br/><span className="small-line"/> sample@gmail.com (123) 456 7890</div>
