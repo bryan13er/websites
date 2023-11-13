@@ -79,7 +79,8 @@ div .bottomImage::after {
   text-align: left;
   font-size: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family:'Outfit'
+  font-family:'Outfit';
+  margin-left: 20px;
 }
 
 .item2 {
@@ -88,8 +89,8 @@ div .bottomImage::after {
   font-size: 1.5rem;
   padding-right: 5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family:'Outfit'
-
+  font-family:'Outfit';
+  margin-right: 20px;
 }
 
 div .rollerText{
@@ -189,10 +190,14 @@ div .number{
 
     .item {
       text-align: center;
+      margin-top:15px;
+      margin-left: 0px;
     }
 
     .item2{
       text-align: center;
+      margin-bottom: 15px;
+      margin-right: 0px;
     }
   }
 
@@ -215,6 +220,14 @@ div .number{
       flex-direction: column;
       align-items: center;
     }
+
+    .container{
+      margin-bottom: 15px;
+    }
+
+    .container-wrapper:not(:last-child) {
+      margin-bottom: 0; /* Remove bottom margin for all but the last child */
+  }
   }
 
 /* media querey for location */
@@ -236,7 +249,7 @@ div .number{
   .container-wrapper {
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-bottom: 25px;
   }
   
