@@ -6,7 +6,7 @@ import Navbar from './Component/Navbar';
 import Home from "./Component/Pages/Home";
 import About from './Component/Pages/About';
 import Services from './Component/Pages/Services';
-// import PastProjects from './Component/Pages/PastProjects';
+import Projects from './Component/Pages/Projects';
 // import Contact from './Component/Pages/Contact';
 
 
@@ -19,6 +19,7 @@ function App() {
             <Route exact="true" path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/services" element={<Services/>}/>
+            <Route path="/projects" element={<Projects/>}/>
           </Routes>
         </div>
       </HashRouter>

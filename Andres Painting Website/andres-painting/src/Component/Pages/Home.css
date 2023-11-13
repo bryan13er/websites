@@ -213,6 +213,7 @@ div .number{
 
     .container-wrapper {
       flex-direction: column;
+      align-items: center;
     }
   }
 

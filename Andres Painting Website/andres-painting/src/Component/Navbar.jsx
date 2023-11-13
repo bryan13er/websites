@@ -81,6 +81,14 @@ const Navbar = () => {
                         Services
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink 
+                        to="/projects"
+                        onClick={closeMenu}
+                    >
+                        Projects
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     )

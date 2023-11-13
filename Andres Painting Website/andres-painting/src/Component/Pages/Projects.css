@@ -1,0 +1,108 @@
+Projects.css
+.ProjectsTitle {
+    text-align: center;
+    font-family: 'Outfit';
+    font-size: 6.5rem;
+    font-weight: 800;
+}
+
+.CenteredText {
+    text-align: center;
+    font-family: 'Outfit';
+    color: #555;
+    font-size: 3rem;
+    max-width: 80%; /* Reduce the maximum width to 80% */
+    margin: 0 auto; /* Center the text horizontally */
+    margin-bottom: 10px;
+}
+
+.ProjectsContainer {
+    display: flex;
+    align-items: center; /* Adjust alignment as needed */
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Adjust padding as needed */
+    margin: 15px 10px 20px 10px; /* Add margin on the sides (left and right) */
+    /* Add more styling as needed */
+}
+  
+.ProjectImage {
+    flex: 0; /* Adjust as needed */
+    margin-right: 20px; /* Adjust margin to reduce space between image and text */
+}
+
+.ProjectText {
+    flex: 1; /* Adjust as needed */
+}
+
+.ProjectTitle {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Outfit';
+}
+
+.ProjectDesc {
+    font-size: 2.25rem;
+    font-family: 'Outfit';
+} 
+
+/* Projects.css */
+.ProjectsContainer {
+    display: flex;
+    align-items: center; /* Adjust alignment as needed */
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Adjust padding as needed */
+    margin: 15px 10px 20px 10px; /* Add margin on the sides (left and right) */
+    /* Add more styling as needed */
+}
+
+.ProjectImage {
+    flex: 0; /* Adjust as needed */
+    margin-right: 20px; /* Adjust margin to reduce space between image and text */
+}
+
+.ProjectText {
+    flex: 1; /* Adjust as needed */
+}
+
+.ProjectTitle {
+    font-size: 3rem;
+    font-weight: 2000;
+    font-family: 'Outfit';
+}
+
+.ProjectDesc {
+    font-size: 2.25rem;
+    font-family: 'Outfit';
+    color: #555;
+} 
+
+/* Media query for screens 500px and below */
+@media screen and (max-width: 500px) {
+    .ProjectsContainer {
+        flex-direction: column; /* Change to column layout */
+        align-items: flex-start; /* Adjust alignment as needed */
+    }
+
+   .ProjectDesc{
+    text-align: left; 
+    font-size: 2rem;
+   }
+
+    .ProjectImage {
+        margin-right: 0; /* Remove right margin in column layout */
+        margin-bottom: 10px; /* Add margin between image and text in column layout */
+        width: 100%;
+    }
+    .ProjectsTitle{
+        margin-bottom: 10px;
+    }
+
+    .CenteredText {
+       max-width: 100%;
+       font-size: 2rem;
+    }
+}
