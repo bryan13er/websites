@@ -62,12 +62,30 @@ div .bottomImage::after {
   text-align: center;
   font-size: 3.5rem;
   font-family: 'Outfit';
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.5); /* Double the text shadow effect */
 }
 
 .Location {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(101, 174, 239);
+}
+
+.LocationTextContainer {
+  background-image: url('../../images/arial_monterey.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white; /* Set text color to be visible on the background */
+  padding: 20px; /* Add padding for better visibility and spacing */
+  flex: 1; /* Make the container fill the available width */
+  height: 450px; /* Set the height to match the iframe height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 450px; /* Set the maximum height to match the iframe height */
+  overflow: hidden; /* Hide overflow content */
 }
 
 .small-line {
@@ -223,7 +241,7 @@ div .number{
 
     .container{
       margin-bottom: 15px;
-      max-width: 100%;
+      width: 350px;
     }
 
     .container-wrapper:not(:last-child) {
@@ -256,7 +274,7 @@ div .number{
   .container {
     border: 3px solid white;
     padding: 20px 40px 40px;
-    width: 350px;
+    width: 320px;
     border-radius: 10px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Increase values for a stronger effect */
   }

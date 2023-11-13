@@ -93,7 +93,9 @@ const Home = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
-        <h1 className="LocationText">Serving the Pacific Grove for 20 Years</h1>
+        <div className="LocationTextContainer">
+          <h1 className="LocationText">Proudly Serving the Monterey Peninsual and Greater Area For More Than 20 Years</h1>
+        </div>
       </div>
       <div className="bottomImage">
         <div className="item">Contact: <br/><span className="small-line"/> sample@gmail.com (123) 456 7890</div>
