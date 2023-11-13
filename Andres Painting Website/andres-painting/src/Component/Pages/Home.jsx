@@ -5,6 +5,7 @@ import paint_logo from "../../images/temp_logo.png"
 import FormatPaintIcon from '@mui/icons-material/FormatPaint';
 import HouseIcon from '@mui/icons-material/House';
 import BrushIcon from '@mui/icons-material/Brush';
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
 
 const services_row = {
   1: {
@@ -21,7 +22,11 @@ const services_row = {
     icon: BrushIcon,
     title: 'Detailed Finish',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sit non voluptas mollitia quidem a dolores autem exercitationem esse placeat?'
-
+  },
+  4: {
+    icon: FmdGoodIcon,
+    title: 'Onsite Estimate',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sit non voluptas mollitia quidem a dolores autem exercitationem esse placeat?'
   }
 };
 
