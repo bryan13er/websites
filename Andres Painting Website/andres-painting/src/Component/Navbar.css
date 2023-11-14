@@ -34,6 +34,14 @@ nav ul li a .instagram-icon {
     top: -0.09rem;
 }
 
+.phone-icon-container {
+    margin-left: 2rem; 
+}
+
+a .phone-icon {
+    color: rgb(38, 221, 38);
+}
+
 nav ul {
     display: flex;
 }
@@ -64,6 +72,10 @@ nav .mobile {
     position: absolute;
     top: 1.4rem;
     right: 3.5rem;
+}
+
+nav .phone {
+    right: 5.5rem;
 }
 
 nav .menu {

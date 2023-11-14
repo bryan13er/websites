@@ -62,7 +62,9 @@ div .bottomImage::after {
   text-align: center;
   font-size: 3.5rem;
   font-family: 'Outfit';
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.5); /* Double the text shadow effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  max-width: 900px; 
 }
 
 .Location {
@@ -72,21 +74,32 @@ div .bottomImage::after {
   background-color: rgb(101, 174, 239);
 }
 
-.LocationTextContainer {
-  background-image: url('../../images/arial_monterey.jpeg');
+div .LocationTextContainer {
+  --bg-image3: url(../../images/arial_monterey.jpeg);
+  --bg-image3-opacity: 0.8;
+
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 450px;
+
+  position: relative;
+  isolation: isolate;
+}
+
+div .LocationTextContainer::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: var(--bg-image3-opacity);
+  
+  background-image: var(--bg-image3);
   background-size: cover;
   background-position: center;
-  color: white; /* Set text color to be visible on the background */
-  padding: 20px; /* Add padding for better visibility and spacing */
-  flex: 1; /* Make the container fill the available width */
-  height: 450px; /* Set the height to match the iframe height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-height: 450px; /* Set the maximum height to match the iframe height */
-  overflow: hidden; /* Hide overflow content */
 }
+
+
 
 .small-line {
   line-height: 2; /* Adjust the value as needed to reduce spacing */
@@ -99,6 +112,7 @@ div .bottomImage::after {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family:'Outfit';
   margin-left: 20px;
+  font-weight: bold;
 }
 
 .item2 {
@@ -109,6 +123,7 @@ div .bottomImage::after {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family:'Outfit';
   margin-right: 20px;
+  font-weight: bold;
 }
 
 div .rollerText{
@@ -136,11 +151,10 @@ div .number{
     padding-right: 10px;
   }
 
-  h1 {
+  .AboutMe {
     font-size: 2.7rem;
     margin-left: auto; /* Center the text horizontally */
     margin-right: auto; /* Center the text horizontally */  
-    max-width: 900px; /* Set the maximum width for the text */
     text-align: left;
     font-family: 'Outfit';
   }
@@ -168,7 +182,7 @@ div .number{
   }
   
   @media (max-width: 480px) {
-    h1 {
+    .AboutMe {
         text-align: center;
         font-size: 2.5rem;
     }
@@ -263,6 +277,7 @@ div .number{
       width: 100%; /* Make the iframe take the full width */
       height: 300px; /* Automatically adjust the height to maintain aspect ratio */
     }
+    
   }
 
   .container-wrapper {
@@ -292,7 +307,7 @@ div .number{
     font-size: 1.25rem;
   }
   
-  .test{
+  .ServicesTitle{
     text-align: center;
     font-family: 'Outfit';
     padding-top: 20px;
