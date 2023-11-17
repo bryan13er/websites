@@ -6,7 +6,7 @@
 }
 
 .titleBackground {
-    --bg-image: url(../../images/roller_high_res.jpeg);
+    --bg-image: url(../../images/red_paint_brush.jpeg);
     --bg-image-opacity: 1.0;
 
     display: grid;
@@ -46,6 +46,7 @@
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Ensure content doesn't extend beyond rounded corners */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Box shadow for lifted effect */
+    height: 100%; 
 }
   
 .topPic {
@@ -58,6 +59,7 @@
 
 .service-desc {
     font-size: 1.20rem; /* Adjust the font size as needed */
+    text-align: center;
 }
 
 .text-container {
@@ -73,6 +75,10 @@
         align-items: center;
     }
 
+    .service-desc{
+        display: none;
+    }
+
     .services-container {
         padding: 10px;
     }
@@ -82,4 +88,11 @@
         border-top-left-radius: 10px; /* Update for rounded corners */
         border-top-right-radius: 10px; /* Update for rounded corners */
     }
+}
+
+
+/* modifications for accordion */
+
+.open {
+    display: block;
 }
