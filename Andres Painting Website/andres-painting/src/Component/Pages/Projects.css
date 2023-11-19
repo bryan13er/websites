@@ -16,24 +16,33 @@
     margin-bottom: 10px;
 }
 
-.ProjectsContainer {
+.services-row {
     display: flex;
-    align-items: center; /* Adjust alignment as needed */
-    border-radius: 10px;
-    border: 3px solid white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px; /* Adjust padding as needed */
-    margin: 15px 10px 20px 10px; /* Add margin on the sides (left and right) */
-    /* Add more styling as needed */
+    justify-content: space-around; /* Adjust as needed */
+    padding-bottom: 30px;
 }
-  
-.ProjectImage {
-    flex: 0; /* Adjust as needed */
-    margin-right: 20px; /* Adjust margin to reduce space between image and text */
+
+.ProjectsContainer {
+    width: 100%;
+    max-width: 650px; /* Set maximum width */
+    height: 100%;
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    margin-bottom: 20px; /* Add some space between containers, adjust as needed */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content doesn't extend beyond rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Box shadow for lifted effect */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .ProjectText {
-    flex: 1; /* Adjust as needed */
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 20px;
 }
 
 .ProjectTitle {
@@ -43,66 +52,15 @@
 }
 
 .ProjectDesc {
-    font-size: 2.25rem;
-    font-family: 'Outfit';
-} 
-
-/* Projects.css */
-.ProjectsContainer {
-    display: flex;
-    align-items: center; /* Adjust alignment as needed */
-    border-radius: 10px;
-    border: 3px solid white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px; /* Adjust padding as needed */
-    margin: 15px 10px 20px 10px; /* Add margin on the sides (left and right) */
-    /* Add more styling as needed */
+    font-size: 1.20rem; /* Adjust the font size as needed */
+    text-align: center;
 }
 
-.ProjectImage {
-    flex: 0; /* Adjust as needed */
-    margin-right: 20px; /* Adjust margin to reduce space between image and text */
-}
 
-.ProjectText {
-    flex: 1; /* Adjust as needed */
-}
+@media (max-width: 1000px) {
 
-.ProjectTitle {
-    font-size: 3rem;
-    font-weight: 2000;
-    font-family: 'Outfit';
-}
-
-.ProjectDesc {
-    font-size: 2.25rem;
-    font-family: 'Outfit';
-    color: #555;
-} 
-
-/* Media query for screens 500px and below */
-@media screen and (max-width: 500px) {
     .ProjectsContainer {
-        flex-direction: column; /* Change to column layout */
-        align-items: flex-start; /* Adjust alignment as needed */
+        padding: 10px;
     }
 
-   .ProjectDesc{
-    text-align: left; 
-    font-size: 2rem;
-   }
-
-    .ProjectImage {
-        margin-right: 0; /* Remove right margin in column layout */
-        margin-bottom: 10px; /* Add margin between image and text in column layout */
-        width: 100%;
-    }
-    .ProjectsTitle{
-        margin-bottom: 10px;
-    }
-
-    .CenteredText {
-       max-width: 100%;
-       font-size: 2rem;
-    }
 }
