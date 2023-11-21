@@ -1,0 +1,60 @@
+.subTitle {
+  font-family: 'Outfit';
+  font-size: 45px;
+  text-align: center;
+}
+
+.ContactFormContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+.ContactText {
+    padding: 20px;
+    font-family: 'Outfit';
+}
+  
+  .ContactForm {
+    flex: 1;
+    padding: 20px; /* Adjust the padding as needed */
+  }
+
+  .ContactIconColor{
+    color: rgb(60, 146, 222)
+  }
+
+  .instaIcon {
+    width: 1.5rem; 
+    height: 1.5rem; 
+    color: rgb(60, 146, 222)
+  }
+
+  a {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underlining */
+    font-weight: normal;
+  }
+
+  .paragraphs {
+    margin-bottom: 10px;
+  }
+  
+  .ContactSpace {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .ContactFormContainer {
+      flex-direction: column;
+      padding: 10px; /* Add some padding for better spacing on smaller screens */
+    }
+
+    .paragraphs {
+        text-align: center;
+    }
+    
+    .googleForm{
+        height: 800px;
+        width: 100%;
+    }
+  }

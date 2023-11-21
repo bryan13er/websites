@@ -101,6 +101,14 @@ const Navbar = () => {
                         Projects
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink
+                        to="/contact"
+                        onClick={closeMenu}
+                    >
+                        Contact
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     )

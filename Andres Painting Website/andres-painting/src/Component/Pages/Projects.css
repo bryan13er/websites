@@ -1,26 +1,4 @@
 /* Projects.css */
-.ProjectsTitle {
-    text-align: center;
-    font-family: 'Outfit';
-    font-size: 6.5rem;
-    font-weight: 800;
-}
-
-.CenteredText {
-    text-align: center;
-    font-family: 'Outfit';
-    color: #555;
-    font-size: 3rem;
-    max-width: 80%; /* Reduce the maximum width to 80% */
-    margin: 0 auto; /* Center the text horizontally */
-    margin-bottom: 10px;
-}
-
-.services-row {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    padding-bottom: 30px;
-}
 
 .ProjectsContainer {
     width: 100%;
@@ -46,7 +24,7 @@
 }
 
 .ProjectTitle {
-    font-size: 3rem;
+    font-size: 35px;
     font-weight: bold;
     font-family: 'Outfit';
 }
@@ -54,8 +32,15 @@
 .ProjectDesc {
     font-size: 1.20rem; /* Adjust the font size as needed */
     text-align: center;
+    color: rgb(70, 67, 67);
 }
 
+.CenteredText {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Outfit';
+    margin-bottom: 30px;
+}
 
 @media (max-width: 1000px) {
 

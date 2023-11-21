@@ -7,7 +7,7 @@ import Home from "./Component/Pages/Home";
 import About from './Component/Pages/About';
 import Services from './Component/Pages/Services';
 import Projects from './Component/Pages/Projects';
-// import Contact from './Component/Pages/Contact';
+import Contact from './Component/Pages/Contact';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
             <Route path="/about" element={<About/>}/>
             <Route path="/services" element={<Services/>}/>
             <Route path="/projects" element={<Projects/>}/>
+            <Route path="/contact" element={<Contact/>}/>
           </Routes>
         </div>
       </HashRouter>

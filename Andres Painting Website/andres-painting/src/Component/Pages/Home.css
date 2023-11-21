@@ -138,8 +138,9 @@ div .number{
 
 .flexContainer {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: rgb(101, 174, 239);
+    padding-bottom: 25px;
   }
   
   .words {
@@ -152,11 +153,12 @@ div .number{
   }
 
   .AboutMe {
-    font-size: 2.7rem;
+    font-size: 45px;
     margin-left: auto; /* Center the text horizontally */
     margin-right: auto; /* Center the text horizontally */  
     text-align: left;
     font-family: 'Outfit';
+    padding-left: 30px;
   }
 
   .mainBlurb {
@@ -176,34 +178,38 @@ div .number{
   }
   
   .flexImage {
-    max-height: 350px;
-    max-width: 100%; /* Ensure the image fits within the container */
-    padding-bottom: 10px;
+    border-radius: 10px;
   }
   
   @media (max-width: 480px) {
     .AboutMe {
         text-align: center;
         font-size: 2.5rem;
+        padding-left: 0px;
     }
 
     .mainBlurb {
         font-size: 1.15rem;
-        padding-right: 30px;
+        padding-left: 0px;
       }
-
-
+    
 
     .flexContainer {
       flex-direction: column; /* Change the direction to column */
       align-items: center; /* Center the items vertically */
+      padding-bottom: 35px;
     }
   
     .words {
-      max-width: 100%; /* Full width for text */
-      text-align: left; /* Center the text */
-      padding-left: 5px;
-      padding-right: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      max-width: 800px; /* Adjust the value based on your desired width */
+      margin: 0 auto; /* Center the container horizontally */
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 25px;
     }
 
     .imageContainer {
@@ -214,6 +220,8 @@ div .number{
     .flexImage {
         max-height: 350px;
         max-width: 100%; /* Ensure the image fills the available width */
+        padding-left: 5px;
+        padding-right: 5px;
       }
 
     .bottomImage {
@@ -253,14 +261,9 @@ div .number{
       align-items: center;
     }
 
-    .container{
-      margin-bottom: 15px;
-      width: 350px;
+    .container {
+      width: 370px;
     }
-
-    .container-wrapper:not(:last-child) {
-      margin-bottom: 0; /* Remove bottom margin for all but the last child */
-  }
   }
 
 /* media querey for location */
@@ -280,10 +283,17 @@ div .number{
     
   }
 
+  .ServicesOffered{
+    margin-bottom: 70px;
+
+  }
+
+
   .container-wrapper {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 25px;
+    gap: 45px;
+    margin-bottom: 45px;
+    justify-content: center;
   }
   
   .container {
@@ -295,21 +305,42 @@ div .number{
   }
 
   .large-icon-container {
-    margin: 30px 30px 10px 0;
-		float: left;
-  }
-  
-  .container__text {
-    display: inline;
+    padding-left: 10px;
+		float: right;
   }
   
   .container h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
   
-  .ServicesTitle{
-    text-align: center;
-    font-family: 'Outfit';
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .contDesc {
+    color: rgb(70, 67, 67);
   }
+
+.HomeServicesTitle {
+  text-align: center;
+  font-family: 'Outfit';
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+
+/* styling for links */
+
+/* Add this style to your CSS file */
+.contactInfo {
+  color: inherit; /* Use the default text color */
+  text-decoration: none; /* Remove underlining */
+  font-weight: normal;
+}
+
+/* Optionally, you can add styles for hover and visited states */
+.contactInfo a:hover {
+  text-decoration: underline; /* Add underlining on hover */
+}
+
+.contactInfo a:visited {
+  color: inherit; /* Use the default text color for visited links */
+}

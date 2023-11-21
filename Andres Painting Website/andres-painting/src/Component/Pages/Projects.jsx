@@ -105,12 +105,10 @@ const Projects = () => {
 
   return (
     <div>
-      <h1 className="ProjectsTitle">Projects</h1>
-      <div className="CenteredText">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget
-          urna bibendum, imperdiet tellus at, lacinia metus. Nulla facilisi.
-        </p>
+       <div className="titleBackground">
+        <div className="ServicesTitle">Projects</div>
+        <div className="ServicesTitleDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat.</div>
+        <div className="centered-dash"></div>
       </div>
       {Object.keys(pData).map((dataKey) => (
         <div className="services-row" key={dataKey}>
@@ -118,7 +116,7 @@ const Projects = () => {
         </div>
       ))}
       <div className="CenteredText">
-        <p>For more recent projects, please visit our socials</p>
+        <p>For more recent projects, visit our social media profiles.</p>
       </div>
     </div>
   );

@@ -35,9 +35,9 @@ const About = () => {
         <div className="large-icon-container values-logo">
           <item.icon style={{ fontSize: '70px' }}/>
         </div>
-        <div className="ontainer__text">
+        <div className="container__text">
           <h2>{item.title}</h2>
-          <p><br/>{item.text}</p>
+          <p className="contDesc"><br/>{item.text}</p>
         </div>
       </div>
     );
@@ -46,18 +46,21 @@ const About = () => {
 
   return (
    <div>
-    <h2 className="AboutTitle">
-      ABOUT ME
-    </h2>
-    <h1 className="AboutQuote">
-        Painting Your Vision With <span className="RainbowText">Skilled Precision</span>
+    <div className="AboutTitleBackground">
+      <h1 className="AboutTitle">
+        About Valdivia Painting
       </h1>
+      <p className="AboutQuote">
+         We Paint Your Vision With <span className="RainbowText">Skilled Precision</span>
+        </p>
+      <div className="centered-dash"></div>
+    </div>
     <img src={monterey} alt="monterey" className="AboutMePic"/>
-    <p className="AboutQuote Values">My Mission</p>
+    <h1 className="AboutSubTitle">My Mission</h1>
     <div className="container-wrapper space">
       {containers}
     </div>
-    <h1 className="AboutQuote">
+    <h1 className="AboutSubTitle">
       My Story
     </h1>
     <div className="split-container">

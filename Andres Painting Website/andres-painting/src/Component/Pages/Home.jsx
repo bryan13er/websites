@@ -5,7 +5,6 @@ import paint_logo from "../../images/temp_logo.png"
 import FormatPaintIcon from '@mui/icons-material/FormatPaint';
 import HouseIcon from '@mui/icons-material/House';
 import BrushIcon from '@mui/icons-material/Brush';
-import FmdGoodIcon from '@mui/icons-material/FmdGood';
 
 const services_row = {
   1: {
@@ -23,11 +22,6 @@ const services_row = {
     title: 'Detailed Finish',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sit non voluptas mollitia quidem a dolores autem exercitationem esse placeat?'
   },
-  4: {
-    icon: FmdGoodIcon,
-    title: 'Onsite Estimate',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sit non voluptas mollitia quidem a dolores autem exercitationem esse placeat?'
-  }
 };
 
 const Home = () => {
@@ -38,11 +32,11 @@ const Home = () => {
     containers.push(
       <div key={key} className="container">
         <div className="large-icon-container">
-          <item.icon style={{ fontSize: '70px' }} className='icon'/>
+          <item.icon style={{ fontSize: '70px', color:'rgb(60, 146, 222)' }} className='icon'/>
         </div>
         <div className="container__text">
           <h2>{item.title}</h2>
-          <p><br/>{item.text}</p>
+          <p className="contDesc"><br/>{item.text}</p>
         </div>
       </div>
     );
@@ -57,7 +51,7 @@ const Home = () => {
           className="logo"
         />
         <h1 className="rollerText">Pacific Grove, CA</h1>
-        <p className="number"> (831) 123-4567</p>
+        <a href="tel:1234567890" className="contactInfo number">(123) 456 7890</a>
       </div>
       <div className="flexContainer">
         <div className="words">
@@ -74,12 +68,14 @@ const Home = () => {
           />
         </div>
       </div>
-      <h1 className="ServicesTitle">Services Offered</h1>
-      <div className="container-wrapper">
-        {containers}
-      </div>
-      <div className="container-wrapper">
-        {containers}
+      <h1 className="HomeServicesTitle">Services Offered</h1>
+      <div className="ServicesOffered">
+        <div className="container-wrapper">
+          {containers}
+        </div>
+        <div className="container-wrapper">
+          {containers}
+        </div>
       </div>
       <div className="Location">
         <iframe
@@ -97,7 +93,12 @@ const Home = () => {
         </div>
       </div>
       <div className="bottomImage">
-        <div className="item">Contact: <br/><span className="small-line"/> sample@gmail.com (123) 456 7890</div>
+        <div className="item">
+          Contact: <br />
+          <span className="small-line" />
+          <a href="mailto:sample@gmail.com" className="contactInfo">sample@gmail.com</a> {' '}
+          <a href="tel:1234567890" className="contactInfo">(123) 456 7890</a>
+        </div>
         <img
             src={paint_logo}
             alt="paint"
