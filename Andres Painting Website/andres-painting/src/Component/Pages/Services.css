@@ -47,10 +47,9 @@
   
 .topPic {
     width: 100%;
-    height: 65%;
+    max-height: 700px; /* Set your desired maximum height */
     object-fit: cover;
-    border-top-left-radius: 10px; /* Match container's border-radius for top-left corner */
-    border-top-right-radius: 10px; /* Match container's border-radius for top-right corner */
+    border-radius: 10px;
 }
 
 .service-desc {
@@ -81,8 +80,7 @@
 
     .topPic {
         width: 100%;
-        border-top-left-radius: 10px; /* Update for rounded corners */
-        border-top-right-radius: 10px; /* Update for rounded corners */
+        border-radius: 10px;
     }
 }
 

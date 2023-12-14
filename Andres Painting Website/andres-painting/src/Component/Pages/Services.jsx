@@ -1,25 +1,60 @@
 // Services.js
 import React from "react";
-import test from "../../images/arial_monterey.jpeg";
+import {Cabinets, Decks, Drywall, Exterior, Interior, PowerWash, Stain, Wallpaper} from "../../ServiceImages/simages";
 import "./Services.css";
+
+// images to use
 
 const Services = () => {
   const sData = {
     sData1: [
-      { title: "Title 1", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit..." },
-      { title: "Title 2", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit..." },
+      {
+        title: "Interior Painting", 
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        pic: { src: Interior, alt: "interior" }
+      },
+      { 
+        title: "Exterior Painting", 
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        pic: { src: Exterior, alt: "exterior" }
+
+      },
     ],
     sData2: [
-      { title: "Title 3", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit..." },
-      { title: "Title 4", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit..." },
+      { 
+        title: "Drywall", 
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        pic: { src: Drywall, alt: "drywall" }
+      },
+      { 
+        title: "Wallpaper", 
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        pic: { src: Wallpaper, alt: "wallpaper" }
+      },
     ],
     sData3: [
-      { title: "Title 5", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit..." },
-      { title: "Title 6", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit..." },
+      { 
+        title: "Cabinet and Furniture", 
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        pic: { src: Cabinets, alt: "Cabinets" }
+      },
+      { 
+        title: "Powerwashing", 
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        pic: { src: PowerWash, alt: "powerwash" }
+      },
     ],
     sData4: [
-      { title: "Title 7", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit..." },
-      { title: "Title 8", description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit..." },
+      { 
+        title: "Staining and Varnishing", 
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        pic: { src: Stain, alt: "staining" }
+      },
+      { 
+        title: "Deck Painting", 
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        pic: { src: Decks, alt: "deck" }
+      },
     ],
   };
   
@@ -29,7 +64,7 @@ const Services = () => {
         key={service.title}
         className={`services-container`}
       >
-        <img src={test} alt="monterey" className="topPic" />
+        <img src={service.pic.src} alt={service.pic.alt} className="topPic" />
         <div className="text-container">
           <h1
             className="ProjectTitle"
