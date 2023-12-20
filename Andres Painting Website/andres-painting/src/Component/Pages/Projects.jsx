@@ -1,94 +1,136 @@
 import React from "react";
-import group from "../../images/painters_group.png";
-import roller from "../../images/paint-roller.jpg";
-import s_roller from "../../images/stock_roller.jpg";
-
 import "./Projects.css";
 import { Carousel } from "../Useful_Comps/Carousel";
+
+// images
+
+import {bathroom1, bathroom2} from "../../ProjectImages/bathroom/bathroomImgs";
+import {chairTable1, chairTable2, chairTable3, chairTable4, chairTable5, chairTable6} from "../../ProjectImages/chairTable/chairTableImgs";
+import {exterior1, exterior2, exterior3, exterior4, exterior5, exterior6, exterior7} from "../../ProjectImages/exterior/exteriorImgs";
+import {kitchCol1, kitchCol2, kitchCol3, kitchCol4} from "../../ProjectImages/kitchCol/kitchColImgs";
+import {door1, door2} from "../../ProjectImages/greenDoor/greenDoorImgs";
+import {livingRoom1, livingRoom2, livingRoom3, livingRoom4} from "../../ProjectImages/livingRoom/livingRoomImgs";
+import {knob1, knob2, knob3} from "../../ProjectImages/knob/knobImgs";
+import {garage1, garage2, garage3, garage4} from "../../ProjectImages/garage/garageImgs";
+import {kitchen1, kitchen2, kitchen3, kitchen4, kitchen5, kitchen6} from "../../ProjectImages/kitchen/kitchenImgs";
+
+// just wrap up everything from office down
 
 const Projects = () => {
  
   const pData = {
     pData1: [
       {
-        title: "Title 1",
+        title: "bathroom",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
         sliderPics: [
-          { src: group, alt: "group" },
-          { src: roller, alt: "roller" },
-          { src: s_roller, alt: "roller on wall" }
+          { src: bathroom1, alt: "b1" },
+          { src: bathroom2, alt: "b2" },
         ]
       },
       {
-        title: "Title 2",
+        title: "chair table",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
         sliderPics: [
-          { src: group, alt: "group" },
-          { src: roller, alt: "roller" },
-          { src: s_roller, alt: "roller on wall" }
+          { src: chairTable1, alt: "ct1" },
+          { src: chairTable2, alt: "ct2" },
+          { src: chairTable3, alt: "ct3" },
+          { src: chairTable4, alt: "ct4" },
+          { src: chairTable5, alt: "ct5" },
+          { src: chairTable6, alt: "ct6" },
         ]
       }
     ],
     pData2: [
       {
-        title: "Title 3",
+        title: "exterior",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
         sliderPics: [
-          { src: group, alt: "group" },
-          { src: roller, alt: "roller" },
-          { src: s_roller, alt: "roller on wall" }
+          { src: exterior1, alt: "e1" },
+          { src: exterior2, alt: "e2" },
+          { src: exterior3, alt: "e3" },
+          { src: exterior4, alt: "e4" },
+          { src: exterior5, alt: "e5" },
+          { src: exterior6, alt: "e6" },
+          { src: exterior7, alt: "e7" },
         ]
       },
       {
-        title: "Title 4",
+        title: "kitchCol",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
         sliderPics: [
-          { src: group, alt: "group" },
-          { src: roller, alt: "roller" },
-          { src: s_roller, alt: "roller on wall" }
+          { src: kitchCol1, alt: "g1" },
+          { src: kitchCol2, alt: "g2" },
+          { src: kitchCol3, alt: "g3" },
+          { src: kitchCol4, alt: "g4" },
         ]
       }
     ],
     pData3: [
       {
-        title: "Title 5",
+        title: "green door",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
         sliderPics: [
-          { src: group, alt: "group" },
-          { src: roller, alt: "roller" },
-          { src: s_roller, alt: "roller on wall" }
+          { src: door1, alt: "gd1" },
+          { src: door2, alt: "gd2" },
         ]
       },
       {
-        title: "Title 6",
+        title: "livingRoom",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
         sliderPics: [
-          { src: group, alt: "group" },
-          { src: roller, alt: "roller" },
-          { src: s_roller, alt: "roller on wall" }
+          { src: livingRoom1, alt: "k1" },
+          { src: livingRoom2, alt: "k2" },
+          { src: livingRoom3, alt: "k3" },
+          { src: livingRoom4, alt: "k4" },
         ]
       }
     ],
     pData4: [
       {
-        title: "Title 7",
+        title: "knob",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
         sliderPics: [
-          { src: group, alt: "group" },
-          { src: roller, alt: "roller" },
-          { src: s_roller, alt: "roller on wall" }
+          { src: knob1, alt: "knob1" },
+          { src: knob2, alt: "knob2" },
+          { src: knob3, alt: "knob3" }
         ]
       },
       {
-        title: "Title 8",
+        title: "garage",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
         sliderPics: [
-          { src: group, alt: "group" },
-          { src: roller, alt: "roller" },
-          { src: s_roller, alt: "roller on wall" }
+          { src: garage1, alt: "g1" },
+          { src: garage2, alt: "g2" },
+          { src: garage3, alt: "g3" },
+          { src: garage4, alt: "g4" },
         ]
       }
-    ]
+    ],
+    pData5: [
+      {
+        title: "kitchen",
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        sliderPics: [
+          { src: kitchen1, alt: "kitch1" },
+          { src: kitchen2, alt: "kitch2" },
+          { src: kitchen3, alt: "kitch3" },
+          { src: kitchen4, alt: "kitch4" },
+          { src: kitchen5, alt: "kitch5" },
+          { src: kitchen6, alt: "kitch6" },
+        ]
+      },
+      {
+        title: "kitchCol",
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        sliderPics: [
+          { src: kitchCol1, alt: "g1" },
+          { src: kitchCol2, alt: "g2" },
+          { src: kitchCol3, alt: "g3" },
+          { src: kitchCol4, alt: "g4" },
+        ]
+      }
+    ],
   };
 
   const renderProjectsItems = (projectsData) => {
